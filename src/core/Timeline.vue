@@ -16,7 +16,6 @@ ul.line-container
       | {{item.content}}
 </template>
 <script>
-import { getType } from '../utils'
 import Star from '../base/star.vue'
 export default {
   name: 'light-timeline',
@@ -170,7 +169,6 @@ $colors: (
     font-size: $font-size/1.2;
   }
   .item-content {
-    cursor: crosshair;
     &.star {
       font-weight: bold;
       font-size: $font-size * 1.1;
