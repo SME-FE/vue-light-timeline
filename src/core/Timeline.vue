@@ -2,7 +2,7 @@
 ul.line-container
   li.line-item(v-for='item in items')
     .item-circle(
-      v-show='item.type==="circle"'
+      v-show='!item.type || item.type==="circle"'
       :class='getColorClass(item.color)'
       :style='getStyle(item)'
     )
@@ -46,7 +46,6 @@ export default {
       return {}
     },
     makeCircleColor (color) {
-      console.log(`make circle: ${color}`)
       return { border: `2px solid ${color}` }
     },
     makeStarColor (color) {
