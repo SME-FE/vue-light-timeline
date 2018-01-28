@@ -10,7 +10,6 @@ export default {
       items: [
         {
           tag: '2010年1月',
-          type: 'circle',
           color: 'yellow',
           content: '在国际乒联巡回赛总决赛中，许昕2-4不敌马龙，获得男单亚军。'
         },
