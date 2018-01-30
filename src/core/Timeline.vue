@@ -162,8 +162,9 @@ $colors: (
   }
   .item-tag {
     position: absolute;
-    left: -$left-pad;
-    margin-left: -($item-pad*0.9);
+    left: -($left-pad + 1rem);
+    width: 65px;
+    text-align: center;
     color: lighten($font-color, 20%);
     font-size: $font-size/1.2;
   }
