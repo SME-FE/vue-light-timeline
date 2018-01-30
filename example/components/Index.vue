@@ -1,5 +1,6 @@
 <template lang="pug">
 .test
+  .test-header
   light-timeline(:items='items')
 </template>
 
@@ -49,7 +50,6 @@ export default {
     }
   },
   created () {
-    console.log('hallo world')
   },
   methods: {
   },
@@ -57,3 +57,14 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+.test-header {
+  background: url('./../assets/xuxin.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  height: 200px;
+}
+</style>
+
