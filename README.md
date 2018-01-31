@@ -71,7 +71,7 @@ Hei, let's gonna try it online, have fun ~~
 ### demo screenshot
 
 <!-- ![许昕](./docs/vue-light-timeline.jpg) -->
-<img alt='许昕' src='./docs/vue-light-timeline.jpg' style='width: 50%;'/>
+<img alt='许昕' src='./docs/vue-light-timeline.jpg' width='50%'/>
 
 ## docs
 
