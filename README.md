@@ -4,7 +4,6 @@
 A lightweight timeline components for vue2
 
 ![Travis branch](https://img.shields.io/travis/SME-FE/vue-light-timeline/master.svg?style=flat-square)
-<!-- ![coverage](https://img.shields.io/coveralls/github/SME-FE/vue-light-timeline/master.svg?style=flat-square) -->
 ![download](https://img.shields.io/npm/dm/vue-light-timeline.svg?style=flat-square)
 ![version](https://img.shields.io/npm/v/vue-light-timeline.svg?style=flat-square)
 ![license](https://img.shields.io/badge/license-mit-green.svg?style=flat-square)
@@ -72,7 +71,7 @@ Hei, let's gonna try it online, have fun ~~
 ### demo screenshot
 
 <!-- ![许昕](./docs/vue-light-timeline.jpg) -->
-<img alt='许昕' src='./docs/vue-light-timeline.jpg' style='height: 600px;'/>
+<img alt='许昕' src='./docs/vue-light-timeline.jpg' style='width: 50%;'/>
 
 ## docs
 
