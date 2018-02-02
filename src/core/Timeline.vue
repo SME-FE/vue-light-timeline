@@ -169,6 +169,7 @@ $colors: (
     font-size: $font-size/1.2;
   }
   .item-content {
+    white-space: pre-line;
     &.star {
       font-weight: bold;
       font-size: $font-size * 1.1;
