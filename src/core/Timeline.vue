@@ -30,8 +30,6 @@ export default {
       presetReg: /purple|orange|yellow/
     }
   },
-  created () {
-  },
   methods: {
     getColorClass (color) {
       return this.presetReg.test(color) ? color : ''

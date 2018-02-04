@@ -110,10 +110,13 @@ color | point 颜色 | String | purple,orange,yellow,or hex colors RGB colors so
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars3.githubusercontent.com/u/6712767?v=4" width="100px;"/><br /><sub>hwen</sub>](https://github.com/hwen)<br />[🤔](#ideas "Ideas & Planning") [💻](https://github.com/SME-FE/vue-light-timeline/commits?author=hwen "Code") [🎨](#design "Design") [📖](https://github.com/SME-FE/vue-light-timeline/commits?author=hwen "Documentation") [💡](#example "Examples") |
-| :---: |
+| [<img src="https://avatars3.githubusercontent.com/u/6712767?v=4" width="100px;"/><br /><sub>hwen</sub>](https://github.com/hwen)<br />[🤔](#ideas "Ideas & Planning") [💻](https://github.com/SME-FE/vue-light-timeline/commits?author=hwen "Code") [🎨](#design "Design") [📖](https://github.com/SME-FE/vue-light-timeline/commits?author=hwen "Documentation") [💡](#example "Examples") | [<img src="https://avatars1.githubusercontent.com/u/12069729?v=4" width="100px;"/><br /><sub>luyilin</sub>](https://github.com/luyilin)<br />[🤔](#ideas "Ideas & Planning") [💻](https://github.com/SME-FE/vue-light-timeline/commits?author=luyilin "Code") |
+| :---: | :---: |
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
+This project follows the [all-contributors][all-contributors] specification.
+Contributions of any kind are welcome!
 ## License
 
 [MIT License](https://opensource.org/licenses/MIT)
