@@ -2,12 +2,12 @@
 ul.line-container
   li.line-item(v-for='item in items')
     .item-circle(
-      v-show='!item.type || item.type==="circle"'
+      v-if='!item.type || item.type==="circle"'
       :class='getColorClass(item.color)'
       :style='getStyle(item)'
     )
     star.item-star(
-      v-show='item.type==="star"'
+      v-if='item.type==="star"'
       :class='getColorClass(item.color)'
       :path-style='getStyle(item)'
     )
