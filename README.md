@@ -34,6 +34,7 @@ Vue.use(LightTimeline);
   <light-timeline :items='items'></light-timeline>
 </template>
 <script>
+const theme = 'red';
 export default {
   data () {
     return {
@@ -51,7 +52,8 @@ export default {
         {
           type: 'star',
           tag: '2018-01-14',
-          content: '=v ='
+          htmlMode: true,
+          content: `<div style="color: ${theme};"> =v = </div>`
         }
       ]
     }
@@ -87,6 +89,7 @@ Attribute | Description | Type | Accepted values	 | Default
 ----|------|----|----|----
 tag | item tag | String | -- | --
 content | item content | String | -- | --
+htmlMode | output real HTML as content | Boolean | -- | false
 type | point type | String | circle, star | circle
 color | point color | String | purple,orange,yellow,or hex colors RGB colors so on... | purple
 

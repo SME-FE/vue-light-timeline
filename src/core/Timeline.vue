@@ -12,8 +12,9 @@ ul.line-container
       :path-style='getStyle(item)'
     )
     .item-tag {{item.tag}}
-    .item-content(:class='item.type')
+    .item-content(v-if='!item.htmlMode' :class='item.type')
       | {{item.content}}
+    .item-content.html-mode(v-else :class='item.type' v-html='item.content')
 </template>
 <script>
 import Star from '../base/star.vue'

@@ -18,7 +18,8 @@ export default {
           tag: '2011年1月',
           type: 'circle',
           color: 'orange',
-          content: '在斯洛文尼亚赛公开赛中，许昕4-2战胜马琳，获得男单冠军'
+          htmlMode: true,
+          content: '<div style="color:#ed9153;">在斯洛文尼亚赛公开赛中，许昕4-2战胜马琳，获得男单冠军</div>'
         },
         {
           tag: '2011年9月',
