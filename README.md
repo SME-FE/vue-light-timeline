@@ -61,7 +61,48 @@ export default {
 }
 </script>
 ```
+Or you can pass slots for each part of the timeline:
 
+```html
+<template>
+  <light-timeline :items='items'>
+    <template slot='tag' slot-scope='{ item }'>
+      {{item.date}}
+    </template>
+    <template slot='symbol' slot-scope='{ item }'>
+      <div class="my_icon_class"><i :class="item.class"></i><div>
+    </template>
+    <template slot='text' slot-scope='{ item }'>
+      {{item.text}}
+    </template>
+  </light-timeline>
+</template>
+<script>
+export default {
+  data () {
+    return {
+      items: [
+        {
+          tag: '2018-01-12',
+          text: 'hallo',
+          class: 'fas fa-star'
+        },
+        {
+          tag: '2018-01-13',
+          text: 'world',
+          class: 'far fa-star'
+        },
+        {
+          tag: '2018-01-14',
+          text: 'other',
+          class: 'fas fa-star'
+        }
+      ]
+    }
+  }
+}
+</script>
+```
 ## Demo
 
 [https://sme-fe.github.io/vue-light-timeline/#/](https://sme-fe.github.io/vue-light-timeline/#/)
