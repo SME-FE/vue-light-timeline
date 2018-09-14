@@ -119,7 +119,6 @@ Hei, let's gonna try it online, have fun ~~
 
 <!-- ![许昕](./docs/vue-light-timeline.jpg) -->
 <img alt='许昕' src='./docs/normal.jpg' width='40%'/>
-<img alt='slot' src='./docs/slot.jpg' width='30%'/>
 
 ## docs
 
@@ -172,9 +171,9 @@ color | point 颜色 | String | purple,orange,yellow,or hex colors RGB colors so
 Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars3.githubusercontent.com/u/6712767?v=4" width="100px;"/><br /><sub>hwen</sub>](https://github.com/hwen)<br />[🤔](#ideas "Ideas & Planning") [💻](https://github.com/SME-FE/vue-light-timeline/commits?author=hwen "Code") [🎨](#design "Design") [📖](https://github.com/SME-FE/vue-light-timeline/commits?author=hwen "Documentation") [💡](#example "Examples") | [<img src="https://avatars1.githubusercontent.com/u/12069729?v=4" width="100px;"/><br /><sub>luyilin</sub>](https://github.com/luyilin)<br />[🤔](#ideas "Ideas & Planning") [💻](https://github.com/SME-FE/vue-light-timeline/commits?author=luyilin "Code") |
-| :---: | :---: |
-
+<!-- prettier-ignore -->
+| [<img src="https://avatars3.githubusercontent.com/u/6712767?s=460&v=4" width="100px;"/><br /><sub><b>hwencc</b></sub>](https://github.com/hwen)<br />[💻](https://github.com/hwen/vue-light-timeline/commits?author=hwen "Code") [🤔](#ideas-hwen "Ideas, Planning, & Feedback") [💡](#example-hwen "Examples") [📖](https://github.com/hwen/vue-light-timeline/commits?author=hwen "Documentation") | [<img src="https://avatars1.githubusercontent.com/u/12069729?s=460&v=4" width="100px;"/><br /><sub><b>luyilin</b></sub>](https://github.com/luyilin)<br />[💻](https://github.com/hwen/vue-light-timeline/commits?author=luyilin "Code") [🤔](#ideas-luyilin "Ideas, Planning, & Feedback") | [<img src="https://avatars3.githubusercontent.com/u/1368836?s=460&v=4" width="100px;"/><br /><sub><b>vratojr</b></sub>](https://github.com/vratojr)<br />[💻](https://github.com/hwen/vue-light-timeline/commits?author=vratojr "Code") [🤔](#ideas-vratojr "Ideas, Planning, & Feedback") [📖](https://github.com/hwen/vue-light-timeline/commits?author=vratojr "Documentation") |
+| :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .js src example build",
+    "contributors": "npx all-contributors check && npx all-contributors generate",
     "build": "webpack --config ./build/webpack.prod.config.js",
     "build:example": "webpack --config ./build/webpack.example.config.js",
     "build:gh": "webpack --config ./build/webpack.gh-pages.config.js",
@@ -30,6 +31,7 @@
   "author": "hwen <hwenleung@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "all-contributors-cli": "^5.4.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-loader": "^6.2.10",

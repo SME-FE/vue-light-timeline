@@ -1,0 +1,46 @@
+{
+  "projectName": "vue-light-timeline",
+  "projectOwner": "hwen",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "hwen",
+      "name": "hwencc",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6712767?s=460&v=4",
+      "profile": "https://github.com/hwen",
+      "contributions": [
+        "code",
+        "ideas",
+        "example",
+        "doc"
+      ]
+    },
+    {
+      "login": "luyilin",
+      "name": "luyilin",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/12069729?s=460&v=4",
+      "profile": "https://github.com/luyilin",
+      "contributions": [
+        "code",
+        "ideas"
+      ]
+    },
+    {
+      "login": "vratojr",
+      "name": "vratojr",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1368836?s=460&v=4",
+      "profile": "https://github.com/vratojr",
+      "contributions": [
+        "code",
+        "ideas",
+        "doc"
+      ]
+    }
+  ]
+}
