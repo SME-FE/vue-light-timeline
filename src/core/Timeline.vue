@@ -1,20 +1,25 @@
 <template lang="pug">
 ul.line-container
   li.line-item(v-for='item in items')
-    .item-circle(
-      v-if='!item.type || item.type==="circle"'
-      :class='getColorClass(item.color)'
-      :style='getStyle(item)'
-    )
-    star.item-star(
-      v-if='item.type==="star"'
-      :class='getColorClass(item.color)'
-      :path-style='getStyle(item)'
-    )
-    .item-tag {{item.tag}}
-    .item-content(v-if='!item.htmlMode' :class='item.type')
-      | {{item.content}}
-    .item-content.html-mode(v-else :class='item.type' v-html='item.content')
+    .item-tag
+      slot(name='tag' :item='item')
+        | {{item.tag}}
+    .item-symbol
+      slot(name='symbol' :item='item')
+        .item-circle(
+          v-if='!item.type || item.type==="circle"'
+          :class='getColorClass(item.color)'
+          :style='getStyle(item)'
+        )
+        star.item-star(
+          v-if='item.type==="star"'
+          :class='getColorClass(item.color)'
+          :path-style='getStyle(item)'
+        )
+    slot(name='text' :item='item')
+      .item-content(v-if='!item.htmlMode' :class='item.type')
+        | {{item.content}}
+      .item-content.html-mode(v-else :class='item.type' v-html='item.content')
 </template>
 <script>
 import Star from '../base/star.vue'
@@ -26,16 +31,16 @@ export default {
       type: Array
     }
   },
-  data () {
+  data() {
     return {
       presetReg: /purple|orange|yellow/
     }
   },
   methods: {
-    getColorClass (color) {
+    getColorClass(color) {
       return this.presetReg.test(color) ? color : ''
     },
-    getStyle (item) {
+    getStyle(item) {
       const color = item.color
       if (!this.presetReg.test(color)) {
         return item.type === 'star'
@@ -44,17 +49,19 @@ export default {
       }
       return {}
     },
-    makeCircleColor (color) {
+    makeCircleColor(color) {
       return { border: `2px solid ${color}` }
     },
-    makeStarColor (color) {
+    makeStarColor(color) {
       return { stroke: color }
     }
   }
 }
 </script>
 <style lang="scss">
-$font-family-no-number: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-no-number: "Chinese Quote", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family: "Helvetica Neue For Number", $font-family-no-number;
 $tag-family: Consolas, Menlo, Courier, monospace;
 
@@ -90,9 +97,7 @@ $colors: (
 @mixin line-point($val) {
   box-sizing: border-box;
   position: absolute;
-  left: -$item-pad;
   margin-left: -($val/2) + 1px;
-  z-index: 1;
 }
 
 @mixin make-circle($diameter, $color) {
@@ -111,7 +116,6 @@ $colors: (
   }
 }
 
-
 :root {
   --purple: $purple;
   --orange: $orange;
@@ -122,10 +126,10 @@ $colors: (
   color: $font-color;
   font-size: $font-size;
   font-family: $font-family;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   position: relative;
   list-style: none;
-  margin: .5rem;
+  margin: 0.5rem;
   padding-left: $left-pad + 1rem;
   &::after {
     position: absolute;
@@ -173,6 +177,14 @@ $colors: (
       font-weight: bold;
       font-size: $font-size * 1.1;
     }
+  }
+  .item-symbol {
+    box-sizing: border-box;
+    position: absolute;
+    left: -$item-pad;
+    // margin-left: -7px;
+    z-index: 1;
+    background: white;
   }
 }
 </style>
