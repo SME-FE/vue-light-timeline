@@ -142,7 +142,7 @@ color | point color | String | purple,orange,yellow,or hex colors RGB colors so 
 
 - tag: slot='tag' replace the default tag
 - symbol: slot='symbol' replace the default icon
-- content: slot='content' replace the default tag
+- content: slot='content' replace the default content
 
 ### Attributes
 
