@@ -16,7 +16,7 @@ ul.line-container
           :class='getColorClass(item.color)'
           :path-style='getStyle(item)'
         )
-    slot(name='text' :item='item')
+    slot(name='content' :item='item')
       .item-content(v-if='!item.htmlMode' :class='item.type')
         | {{item.content}}
       .item-content.html-mode(v-else :class='item.type' v-html='item.content')

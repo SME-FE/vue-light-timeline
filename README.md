@@ -61,6 +61,8 @@ export default {
 }
 </script>
 ```
+- slot
+
 Or you can pass slots for each part of the timeline:
 
 ```html
@@ -72,8 +74,8 @@ Or you can pass slots for each part of the timeline:
     <template slot='symbol' slot-scope='{ item }'>
       <div class="my_icon_class"><i :class="item.class"></i><div>
     </template>
-    <template slot='text' slot-scope='{ item }'>
-      {{item.text}}
+    <template slot='content' slot-scope='{ item }'>
+      {{item.content}}
     </template>
   </light-timeline>
 </template>
@@ -84,17 +86,17 @@ export default {
       items: [
         {
           tag: '2018-01-12',
-          text: 'hallo',
+          content: 'hallo',
           class: 'fas fa-star'
         },
         {
           tag: '2018-01-13',
-          text: 'world',
+          content: 'world',
           class: 'far fa-star'
         },
         {
           tag: '2018-01-14',
-          text: 'other',
+          content: 'other',
           class: 'fas fa-star'
         }
       ]
@@ -103,6 +105,8 @@ export default {
 }
 </script>
 ```
+here is [example demo](https://sme-fe.github.io/vue-light-timeline/#/slot) and [code](https://github.com/SME-FE/vue-light-timeline/blob/master/example/components/Slot.vue)
+
 ## Demo
 
 [https://sme-fe.github.io/vue-light-timeline/#/](https://sme-fe.github.io/vue-light-timeline/#/)
@@ -114,7 +118,8 @@ Hei, let's gonna try it online, have fun ~~
 ### demo screenshot
 
 <!-- ![许昕](./docs/vue-light-timeline.jpg) -->
-<img alt='许昕' src='./docs/vue-light-timeline.jpg' width='50%'/>
+<img alt='许昕' src='./docs/normal.jpg' width='40%'/>
+<img alt='slot' src='./docs/slot.jpg' width='30%'/>
 
 ## docs
 
@@ -134,6 +139,12 @@ htmlMode | output real HTML as content | Boolean | -- | false
 type | point type | String | circle, star | circle
 color | point color | String | purple,orange,yellow,or hex colors RGB colors so on... | purple
 
+### slot
+
+- tag: slot='tag' replace the default tag
+- symbol: slot='symbol' replace the default icon
+- content: slot='content' replace the default tag
+
 ### Attributes
 
 参数 | 说明 | 类型 | 可选值	 | 默认值
@@ -146,8 +157,15 @@ items | timeline 需要展示的数据  | Array | -- | --
 ----|------|----|----|----
 tag | item 标签（可选） | String | -- | --
 content | item 内容 | String | -- | --
+htmlMode | 是否HTML字串 | Boolean | -- | false
 type | point 类型 | String | circle, star | circle
 color | point 颜色 | String | purple,orange,yellow,or hex colors RGB colors so on... | purple
+
+### slot 插槽
+
+- tag: slot='tag' 替换原先的标签
+- symbol: slot='symbol' 替换原先的图标
+- content: slot='content' 替换原先的内容
 
 ## Contributors
 
