@@ -1,6 +1,6 @@
 <template lang="pug">
 ul.line-container
-  li.line-item(v-for='item in items')
+  li.line-item(v-for='(item,i) in items' :class='getLineItemClass(i)')
     .item-tag
       slot(name='tag' :item='item')
         | {{item.tag}}
@@ -29,7 +29,9 @@ export default {
   props: {
     items: {
       type: Array
-    }
+    },
+    openTop: { type: Boolean, default: true },
+    openBottom: { type: Boolean, default: true }
   },
   data() {
     return {
@@ -37,6 +39,21 @@ export default {
     }
   },
   methods: {
+    getLineItemClass(index) {
+      let baseClass = ''
+      if (index === 0) {
+        if (!this.openTop) {
+          baseClass += 'closed-top'
+        }
+        baseClass += ' top'
+      } else if (index === this.items.length - 1) {
+        if (!this.openBottom) {
+          baseClass += 'closed-bottom'
+        }
+        baseClass += ' bottom'
+      }
+      return baseClass
+    },
     getColorClass(color) {
       return this.presetReg.test(color) ? color : ''
     },
@@ -137,7 +154,7 @@ $colors: (
     left: $left-pad;
     top: 0;
     width: 1px;
-    height: 100%;
+    bottom: 0;
     background-color: lighten($purple, 20%);
   }
 
@@ -145,6 +162,15 @@ $colors: (
     padding: $item-pad;
     position: relative;
   }
+
+  .line-item.closed-top {
+    padding-top: 0;
+  }
+
+  .line-item.closed-bottom {
+    padding-bottom: 0;
+  }
+
   .item-circle {
     @include make-circle($icon-size, $purple);
     @each $key, $val in $colors {

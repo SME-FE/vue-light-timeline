@@ -8,7 +8,7 @@ A lightweight timeline components for vue2
 ![version](https://img.shields.io/npm/v/vue-light-timeline.svg?style=flat-square)
 ![license](https://img.shields.io/badge/license-mit-green.svg?style=flat-square)
 
-## install
+## Install
 
 ```shell
 yarn add vue-light-timeline
@@ -20,7 +20,7 @@ if you prefer npm:
 npm i vue-light-timeline
 ```
 
-## usage
+## Usage
 
 ```js
 import Vue from 'vue';
@@ -120,13 +120,21 @@ Hei, let's gonna try it online, have fun ~~
 <!-- ![许昕](./docs/vue-light-timeline.jpg) -->
 <img alt='许昕' src='./docs/normal.jpg' width='40%'/>
 
-## docs
+## Docs
 
-### Attributes
+### Styling
 
-Attribute | Description | Type | Accepted values	 | Default
+To allow for specific styling, the class 'top' is attached to the topmost line-item of the timeline and 'bottom' is attached to the last one.
+
+Two props (open-top and open-bottom) are available to avoid having the history line continue past the top/bottom elements: see the [demo](https://sme-fe.github.io/vue-light-timeline/#/closed) showcasing the appearence with open-top=open-bottom=false
+
+### Props
+
+Name | Description | Type | Accepted values	 | Default
 ----|------|----|----|----
 items | timeline content data  | Array | -- | --
+open-top | Display the history line continuing above the first element | Boolean | -- | true
+open-bottom | Display the history line continuing below the first element | Boolean | -- | true
 
 ### items
 
