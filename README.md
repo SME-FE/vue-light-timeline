@@ -109,7 +109,8 @@ here is [example demo](https://sme-fe.github.io/vue-light-timeline/#/slot) and [
 
 ## Demo
 
-[https://sme-fe.github.io/vue-light-timeline/#/](https://sme-fe.github.io/vue-light-timeline/#/)
+- [Demo1](https://sme-fe.github.io/vue-light-timeline/#/)
+- [Demo2 slot](https://sme-fe.github.io/vue-light-timeline/#/slot)
 
 Hei, let's gonna try it online, have fun ~~
 

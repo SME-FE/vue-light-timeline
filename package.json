@@ -1,6 +1,6 @@
 {
   "name": "vue-light-timeline",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight vue timeline components",
   "main": "index.js",
   "scripts": {
