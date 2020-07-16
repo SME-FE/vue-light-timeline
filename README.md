@@ -72,7 +72,7 @@ Or you can pass slots for each part of the timeline:
       {{item.date}}
     </template>
     <template slot='symbol' slot-scope='{ item }'>
-      <div class="my_icon_class"><i :class="item.class"></i><div>
+      <div class="my_icon_class"><i :class="item.class"></i></div>
     </template>
     <template slot='content' slot-scope='{ item }'>
       {{item.content}}
